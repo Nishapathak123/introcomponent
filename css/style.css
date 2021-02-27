@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    background: #ff7978 url('../images/bg-intro-desktop.png');
+}
+.banner .container{
+    max-width: 1115px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.banner .container .band{
+    max-width: 45%;
+}
+.banner .container .band h1{
+    font-size: 40px;
+    color: #fff;
+    line-height: 50px;
+    margin-bottom: 26px;
+}
+.banner .container .band p{
+    font-size: 16px;
+    color: #e9e9e7;
+    line-height: 27px;
+}
+.banner .container .info {
+    margin-top: 70px;
+}
+.banner .container .info p{
+    font-size: 14px;
+    background: #5d54a3;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 11px 68px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,.3);
+}
+.banner .container .info .primary{
+    color: #fff;
+}
+.banner .container .info .light{
+    color: #c0c1c1;
+}
+
+form {
+    width: 50%;
+}
+form .contact {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 65px;
+    padding: 40px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.4);
+}
+form .contact input{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    /* outline: 0; */
+    font-weight: 600;
+    border: 1px solid #e2e2e2;
+    padding: 15px 30px;
+}
+form .contact button{
+    font-size: 15px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    margin-bottom: 15px;
+    background: #37cc8a;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+form .contact button:hover{
+    background: #77e2b4;
+}
+form .contact p{
+    color: #e2e2e2;
+    font-size: 10px;
+    text-align: center;
+}
+form .contact small{
+    color: #ff7978;
+}
+@media (max-width: 600px){
+   form {
+       width: 100%;
+   }
+    .container {
+        padding: 0px 23px;
+    }
+    .banner{
+        background: #ff7978 url('../images/bg-intro-mobile.png');
+    }
+    .banner .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner .container .band{
+        max-width: none;
+        text-align: center;
+        margin-top : 100px;
+    }
+    .banner .container .band h1{
+        margin-bottom: 30px;
+    }
+    .banner .container .band p{
+        font-size: 16px;
+        padding: 0px 5px;
+        text-align: center;
+        color: #e9e9e7;
+    }
+    form .contact input {
+        width: 100%;
+    }
+
+    form .contact button {
+        width: 100%;
+    }
+}
